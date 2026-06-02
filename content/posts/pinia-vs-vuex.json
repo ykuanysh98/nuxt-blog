@@ -1,0 +1,9 @@
+{
+  "slug": "pinia-vs-vuex",
+  "title": "Pinia vs Vuex: почему стоит перейти",
+  "description": "Сравниваем два state manager-а Vue — и объясняем, почему Pinia стала стандартом.",
+  "date": "2024-11-25",
+  "tags": ["Vue", "Pinia", "State Management"],
+  "readTime": 4,
+  "body": "Vuex долгое время был стандартным решением для управления состоянием в Vue. Но с выходом Vue 3 и Composition API появилась Pinia — более простая и типобезопасная альтернатива. Главные отличия: в Pinia нет mutations, store определяется как обычная функция, TypeScript работает из коробки без дополнительных настроек. Pinia также поддерживает devtools и hot module replacement. Переход с Vuex на Pinia обычно занимает несколько часов — API интуитивно понятен, а код становится заметно чище."
+}
