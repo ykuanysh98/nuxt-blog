@@ -5,7 +5,11 @@
       <p class="text-gray-500">Thoughts on frontend development, Vue, and the web.</p>
     </div>
 
-    <div class="flex flex-col gap-4">
+    <div v-if="pending" class="flex flex-col gap-4">
+      <Postskeleton v-for="n in 3" :key="n" />
+    </div>
+
+    <div v-else class="flex flex-col gap-4">
       <PostCard v-for="post in posts" :key="post.slug" :post="post" />
     </div>
   </div>
@@ -19,5 +23,5 @@ useSeoMeta({
   ogDescription: 'Thoughts on Vue, Nuxt, and modern frontend development.',
 })
 
-const { posts } = usePosts()
+const { posts, pending } = usePosts()
 </script>
