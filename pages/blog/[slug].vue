@@ -35,7 +35,13 @@ if (post) {
     description: post.description,
     ogTitle: post.title,
     ogDescription: post.description,
+    ogType: 'article',
+    ogUrl: `https://yourdomain.com/blog/${post.slug}`,
+    twitterCard: 'summary',
+    twitterTitle: post.title,
+    twitterDescription: post.description,
     articlePublishedTime: post.date,
+    articleTag: post.tags,
   })
 } else {
   // 404 
