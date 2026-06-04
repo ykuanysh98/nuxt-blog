@@ -11,6 +11,9 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       htmlAttrs: { lang: 'en' },
+      link: [
+        { rel: 'sitemap', type: 'application/xml', href: '/sitemap.xml' },
+      ],
     },
   },
 })
